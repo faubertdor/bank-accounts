@@ -5,10 +5,10 @@
 
 public class SavingsAccount extends BaseAccount {
 	
-	private static float interestRate;
+	private static float savingsRate;
 	
 	public static void setInterestRate(float rate) {
-		interestRate = rate;
+		savingsRate = rate;
 	}
 	
 	public SavingsAccount(String name) {
@@ -21,9 +21,9 @@ public class SavingsAccount extends BaseAccount {
 		this.balance = balance;
 	}
 	
-	public void display() {
+	public void displaySavings() {
 		super.display();
-		System.out.println("\t Interest Rate: \t" + interestRate);
+		System.out.println("\t Interest Rate: \t" + savingsRate);
 		System.out.println("\t**************************\n\n");
 	}
 }
